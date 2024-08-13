@@ -1,0 +1,29 @@
+<!--
+title: Asa - Blog
+-->
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>{{ title }}</title>
+    {{ components.headers() }}
+</head>
+
+<body>
+    {{ components.header() }}
+    <main class="mx-auto flex-1 flex max-w-2xl w-full flex-col px-6 py-10 md:px-0 lg:px-8">
+        <div class="flex flex-col">
+            {% for page in pages.byTag("blog", sortBy="publishDate=desc") %}
+            <a href="{{  page.data['url']  }}" class="group border-b py-10">
+                <h2 class="mb-1 text-xl font-semibold tracking-tight group-hover:underline md:text-2xl">{{
+                    page.data['title'] }}</h2>
+                <h3 class="text-sm text-neutral-500">{{ page.data['publishDate'] }}</h3>
+                <p class="mt-4 text-lg">{{ page.data['description'] }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </main>
+    {{ components.footer() }}
+</body>
+
+</html>

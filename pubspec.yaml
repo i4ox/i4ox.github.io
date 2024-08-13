@@ -1,0 +1,16 @@
+name: personal_website_shock
+description:
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  http: ^1.2.2
+  github: ^9.24.0
+  static_shock: any
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
