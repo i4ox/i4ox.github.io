@@ -11,12 +11,13 @@
     {{ components.header() }}
 
 
-    <main class="mx-auto flex flex-1 max-w-2xl w-full flex-col space-y-3 px-6 py-16 md:px-0">
+    <main class="mx-auto flex flex-1 max-w-5xl w-full flex-col space-y-3 px-6 py-16 md:px-0">
         <h1 class="text-4xl font-semibold tracking-tight">{{ title }}</h1>
         <h2 class="text-neutral-500">{{ publishDate }}</h2>
         <section class="prose
         prose-p:mb-4
         prose-p:mt-0
+        prose-p:text-lg
         prose-p:leading-relaxed
         prose-p:before:hidden
         prose-p:after:hidden
@@ -59,7 +60,7 @@
         prose-code:px-2
         prose-code:inline-block
         prose-code:font-normal
-        prose-code:text-[85%]
+        prose-code:text-md
         prose-code:leading-relaxed
         prose-code:text-black
         prose-code:before:hidden

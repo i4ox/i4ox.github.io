@@ -1,5 +1,5 @@
 <!--
-title: Asa - Blog
+title: Курс по Dart
 -->
 <!doctype html>
 <html lang="en" data-bs-theme="light">
@@ -13,7 +13,7 @@ title: Asa - Blog
     {{ components.header() }}
     <main class="mx-auto flex-1 flex max-w-5xl w-full flex-col px-6 py-10 md:px-0 lg:px-8">
         <div class="flex flex-col">
-            {% for page in pages.byTag("blog", sortBy="publishDate=desc") %}
+            {% for page in pages.byTag("dart_course", sortBy="publishDate=desc") %}
             <a href="{{  page.data['url']  }}" class="group border-b py-10">
                 <h2 class="mb-1 text-xl font-semibold tracking-tight group-hover:underline md:text-2xl">{{
                     page.data['title'] }}</h2>

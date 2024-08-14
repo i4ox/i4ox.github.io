@@ -8,12 +8,12 @@ Future<void> main(List<String> arguments) async {
         RemoteFile(
           url:
               'https://cdn1.iconfinder.com/data/icons/tidee-halloween/24/021_027_cat_black_witch_halloween-256.png',
-          buildPath: FileRelativePath("images/", "logo", "png"),
+          buildPath: FileRelativePath("images/", "preview", "png"),
         ),
         RemoteFile(
           url:
               'https://cdn1.iconfinder.com/data/icons/tidee-halloween/24/021_028_cat_black_witch_halloween-256.png',
-          buildPath: FileRelativePath("images/", "preview", "png"),
+          buildPath: FileRelativePath("images/", "logo", "png"),
         ),
       },
     )
